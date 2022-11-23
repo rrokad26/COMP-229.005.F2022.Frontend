@@ -41,13 +41,11 @@
                     <!-- <tr> -->
                     <tr *ngFor="let item of inventoryList">
                         <td class="text-center"> {{ item.item }} </td>
+                        <td class="text-center"> {{ item.bra }} </td>
+                        <td class="text-center"> {{ item.cat }} </td>
                         <td class="text-center"> {{ item.qty }} </td>
                         <td class="text-center"> {{ item.status }} </td>
-                        <td>
-                            Hight: {{ item.size.h }}<br />
-                            Width: {{ item.size.w }}<br />
-                            UOM: {{ item.size.uom }}<br />
-                        </td>
+                        
                         <td class="text-center">{{ item.tags }}</td>
                         <!-- <td class="text-center">
                             <button class="btn bg-primary btn-primary btn-sm">
