@@ -27,11 +27,14 @@
             <table class="table table-bordered table-striped table-hover">
                 <!-- Header Row-->
                 <tr>
-                    <th class="text-center">Item</th>
-                    <th class="text-center">Qty</th>
-                    <th class="text-center">Status</th>
-                    <th>Size</th>
-                    <th class="text-center">Tags</th>
+
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Brand</th>
+                    <th class="text-center">Category</th>
+                    <th class="text-center">Quantity</th>
+                    <th class="text-center">Price</th>
+                    <th class="text-center">Description</th>
+
                     <th class="text-center" colspan="3">Actions</th>
                 </tr>
 
@@ -40,13 +43,15 @@
                 <!-- <% for(let count = 0; count < InventoryList.length; count++) { %> -->
                     <!-- <tr> -->
                     <tr *ngFor="let item of inventoryList">
-                        <td class="text-center"> {{ item.item }} </td>
-                        <td class="text-center"> {{ item.bra }} </td>
-                        <td class="text-center"> {{ item.cat }} </td>
-                        <td class="text-center"> {{ item.qty }} </td>
-                        <td class="text-center"> {{ item.status }} </td>
+
+                        <td class="text-center"> {{ item.name }} </td>
+                        <td class="text-center"> {{ item.brand }} </td>
+                        <td class="text-center"> {{ item.category }} </td>
+                        <td class="text-center"> {{ item.quantity }} </td>
+                        <td class="text-center"> {{ item.price }} </td>
+                        <td class="text-center"> {{ item.description }} </td>
                         
-                        <td class="text-center">{{ item.tags }}</td>
+
                         <!-- <td class="text-center">
                             <button class="btn bg-primary btn-primary btn-sm">
                                 <i class="fas fa-pencil-alt" ></i></button>

@@ -2,21 +2,14 @@ export class Inventory {
 
     constructor(
         public _id?: string,
-        public item?: string,
-        public qty?: number,
-        public tags?: string[],
-        public status?: string,
-        public size?: Size
-    ){}
 
+        public name?: string,
+        public brand?: string,
+        public category?: string,
+        public quantity?: number,
+        public price?: number,
+        public description?: string,
+    ){}
 }
 
-export class Size {
 
-    constructor(
-        public h?: number,
-        public w?: number,
-        public uom?: string
-    ){}
-
-}

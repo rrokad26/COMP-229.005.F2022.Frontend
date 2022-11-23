@@ -18,7 +18,9 @@
                         id="itemTextField"
                         placeholder="Enter the Item Name"
                         name="item" 
-                        [(ngModel)]="item.item"
+
+                        [(ngModel)]="item.name"
+
                         required>
                 </div>
                 <br />
@@ -28,7 +30,9 @@
                     id="QtyTextField"
                     placeholder="00"
                     name="qty" 
-                    [(ngModel)]="item.bra"
+
+                    [(ngModel)]="item.brand"
+
                     required>
                 </div>
                 <br />
@@ -38,7 +42,9 @@
                     id="QtyTextField"
                     placeholder="00"
                     name="qty" 
-                    [(ngModel)]="item.cat"
+
+                    [(ngModel)]="item.category"
+
                     required>
                 </div>
                 <br />
@@ -48,7 +54,9 @@
                     id="QtyTextField"
                     placeholder="00"
                     name="qty" 
-                    [(ngModel)]="item.qty"
+
+                    [(ngModel)]="item.quantity"
+
                     required>
                 </div>
                 <br />
@@ -58,7 +66,9 @@
                     id="statusTextField"
                     placeholder="Enter a Price"
                     name="status" 
-                    [(ngModel)]="item.status"
+
+                    [(ngModel)]="item.price"
+
                     >
                 </div>
                 <br />
@@ -69,8 +79,10 @@
                     <textarea type="text" class="form-control"
                     id="tagTextArea"
                     placeholder="Enter the tags of the item"
-                    name="tags" 
-                    [(ngModel)]="item.tags">                    
+
+                    name="description" 
+                    [(ngModel)]="item.description">                    
+                  
                     </textarea>
                 </div>
                 <br/>
