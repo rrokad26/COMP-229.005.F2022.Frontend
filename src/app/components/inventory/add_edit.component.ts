@@ -1,7 +1,10 @@
 import { Component } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { Router, ActivatedRoute } from "@angular/router";
+
 import { Inventory} from "../../models/inventory.model";
+
+
 import { InventoryRepository } from "../../models/inventory.repository";
 
 @Component({
@@ -32,11 +35,13 @@ export class AddEditComponent {
         } 
 
         // Add
+
         /*
         else {
             this.item.size = new Size();
         }  
         */      
+
     }
 
     save(form: NgForm) {
